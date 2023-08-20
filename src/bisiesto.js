@@ -1,5 +1,5 @@
-function sumar(a, b) {
-  return a + b;
+function bisiesto(a) {
+  return a;
 }
 
-export default sumar;
+export default bisiesto;
