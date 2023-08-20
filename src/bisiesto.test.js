@@ -12,4 +12,8 @@ describe("Saber si es un Año Bisiesto", () => {
   it("Todos los años divisibles por 4 pero no por 100 SON años bisiestos", () => {
     expect(bisiesto(2008)).toEqual(true);
   });
+
+  it("Todos los años que no son divisibles por 4 NO son años bisiestos", () => {
+    expect(bisiesto(2017)).toEqual(false);
+  });
 });
