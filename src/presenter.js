@@ -10,5 +10,12 @@ btnmostrar.addEventListener("click", (event) => {
   const txtbisiesto=bisiesto(txtyear);
   resultado.style.display="block";
 
-  resultado.innerHTML = "<p>" + bisiesto(txtyear) + "</p>";
+if(txtbisiesto)
+{
+  resultado.innerHTML = "<p> El año " +txtyear +" es: BISIESTO </p>";
+}
+else{
+  resultado.innerHTML = "<p> El año " +txtyear +" no es: BISIESTO </p>";
+}
+  
 });

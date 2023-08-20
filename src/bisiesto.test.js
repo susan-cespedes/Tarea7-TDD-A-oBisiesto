@@ -1,7 +1,7 @@
-import sumar from "./bisiesto.js";
+import bisiesto from "./bisiesto.js";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+describe("Saber si es un Año Bisiesto", () => {
+  it("Todos los años divisibles por  400 SON años bisiestos", () => {
+    expect(bisiesto(2000)).toEqual(true);
   });
 });
